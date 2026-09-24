@@ -1,5 +1,5 @@
 (ns character-creator.doc-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [character-creator.doc :as doc]))
 
 (deftest default-character-doc-test

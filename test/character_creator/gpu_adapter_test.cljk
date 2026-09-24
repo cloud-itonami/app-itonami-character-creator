@@ -1,5 +1,5 @@
 (ns character-creator.gpu-adapter-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [character-creator.doc :as doc]
             [character-creator.pipeline :as pipeline]
             [character-creator.gpu-adapter :as gpu]
