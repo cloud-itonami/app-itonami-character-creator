@@ -12,3 +12,4 @@ Seed-san.vrm
 dev/character_creator/texture_demo.cljs
 texture-demo.html
 dev/texture-build.edn
+.nbb/

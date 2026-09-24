@@ -1,5 +1,5 @@
 (ns character-creator.accessories-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [character.body :as cbody]
             [character-creator.accessories :as acc]))
 
