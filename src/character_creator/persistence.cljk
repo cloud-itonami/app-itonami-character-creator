@@ -23,7 +23,7 @@
   string` is the safe reader for data written by our own `pr-str`, matching
   what `save-local!` produces)."
   (:require [kotoba.lang.text] [vrm.glb :as glb]
-            #?(:clj [clojure.edn :as edn] :cljs [cljs.reader :as edn])))
+            #?(:clj [kotoba.lang.edn :as edn] :cljs [cljs.reader :as edn])))
 
 (def ^:private storage-key-prefix "kami-character-creator/")
 
