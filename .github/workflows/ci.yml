@@ -1,4 +1,4 @@
-name: CI
+name: oracle
 
 on:
   push:
@@ -9,14 +9,16 @@ permissions:
   contents: read
 
 jobs:
-  test:
-    name: clojure -M:test (JDK ${{ matrix.java }})
+  oracle-test:
+    name: oracle (reference only) — clojure -M:test (JDK ${{ matrix.java }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         java: ['17', '21']
     steps:
+      - name: oracle notice
+        run: echo "ORACLE job - reference measurement only, not a gate, not a required check, no native build or gate depends on it (AGENTS.md CI exception, JUN-579)."
       # This repo's deps.edn :deps resolves io.github.kotoba-lang/vrm and
       # io.github.kotoba-lang/character via :local/root sibling paths rather
       # than git deps, so CI has to reproduce the orgs/kotoba-lang/<repo>
